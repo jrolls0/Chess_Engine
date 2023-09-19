@@ -1,7 +1,7 @@
 # C++ Chess Engine 
 
 ## Description
-Welcome to the C++ Chess Simulator repository! This program allows you to play chess against a computer AI opponent right in your terminal. Designed with simplicity and functionality in mind, this is a great tool for practicing chess or simply enjoying the game. The opponent AI has an Elo rating of around 400, making it a good starting point for beginners.
+Welcome to the C++ Chess Engine repository! This program allows you to play chess against a computer AI opponent right in your terminal. Designed with simplicity and functionality in mind, this is a great tool for practicing chess or simply enjoying the game. The opponent AI has an Elo rating of around 400, making it a good starting point for beginners.
 
 ## Prerequisites
 A machine with C++ compiler (GCC is recommended)
