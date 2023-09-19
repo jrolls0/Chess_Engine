@@ -9,10 +9,10 @@ Terminal to run the command-line interface
 
 ## Installation
 Clone the repository to your local machine:
-        git clone https://github.com/[Your_GitHub_Username]/ChessSimulator.git
+`git clone https://github.com/[Your_GitHub_Username]/ChessSimulator.git```
 
 Navigate to the directory where you've cloned the repo:
-        cd ChessSimulator
+`cd ChessSimulator`
 
 Compile the source files:
         g++ main.cpp AIPlayer.cpp board.cpp -o chess
