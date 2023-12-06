@@ -10,11 +10,11 @@ Terminal to run the command-line interface
 ## Installation
 Clone the repository to your local machine.
 
-```git clone https://github.com/[Your_GitHub_Username]/ChessSimulator.git```
+```git clone https://github.com/[Your_GitHub_Username]/Chess_Engine.git```
 
 Navigate to the directory where you've cloned the repo:
 
-```cd ChessSimulator```
+```cd Chess_Engine```
 
 Compile the source files:
 
