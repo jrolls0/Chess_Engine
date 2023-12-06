@@ -244,17 +244,40 @@ std::string AIPlayer::bestMove(ChessBoard &board) {
     int alpha = INT_MIN;
     int beta = INT_MAX;
 
+    int totalPieces = board.whitePieces.size() + board.blackPieces.size();
+    
+    int depth = 3;
+
+    if (totalPieces <= 28) { 
+        depth = 4;
+    }
+    if (totalPieces <= 24) { 
+        depth = 5;
+    }
+    if (totalPieces <= 20) { 
+        depth = 6;
+    }
+    if (totalPieces <= 16) { 
+        depth = 7;
+    }
+    if (totalPieces <= 12) { 
+        depth = 8;
+    }
+    if (totalPieces <= 8) { 
+        depth = 9;
+    }
+
     for (const auto& move : possibleMoves) {
         ChessBoard tempBoard = board;
         tempBoard.makeMove(move, PlayerColor::BLACK);
-        int moveValue = miniMax(tempBoard, 4, false, alpha, beta);
+        int moveValue = miniMax(tempBoard, depth, false, alpha, beta);
 
         if (moveValue > bestValue) {
             bestValue = moveValue;
             bestMove = move;
         }
     }
-
+    
     return bestMove;
 }
 
